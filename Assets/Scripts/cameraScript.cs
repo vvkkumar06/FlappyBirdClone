@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cameraScript : MonoBehaviour {
 
-	public static float offsetX;
+	public static float offsetX= 5;
 
 	// Use this for initialization
 	void Start () {
@@ -32,7 +32,7 @@ public class cameraScript : MonoBehaviour {
 	 void MoveTheCamera(){
 
 	 	Vector3 temp = transform.position;
-	 	temp.x = Bird.instance.getPostionX () + offsetX;
+	 	temp.x = Bird.instance.getPostionX ()  + offsetX;
 	 	transform.position = temp;
 
 
